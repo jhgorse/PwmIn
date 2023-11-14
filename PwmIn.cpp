@@ -25,7 +25,7 @@
 PwmIn::PwmIn(PinName p) : _p(p) {
     _p.rise(callback(this, &PwmIn::rise));
     _p.fall(callback(this, &PwmIn::fall));
-    _period = 0.0;
+    _period = 1.0;
     _pulsewidth = 0.0;
     _t.start();
 }
